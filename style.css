@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+body { 
+  background-image: url('img/boxing.jpeg'); /*body koji ima pozadinsku sliku boksackog ringa */   
+  background-repeat: no-repeat;
+  background-attachment: fixed; /*omogućava da slika ostaje čitavo vrijeme tj. da "nema kraja pri scrollanju" fiksna slika čitavo vrijeme, ne može se doći na kraj.... */ 
+  z-index: -1; /* z index zbog tekst blocka (klasa ispod) i pozadinske slike */ 
+}
+
+@font-face{ /* Ovdje dodajem font iz direktorija fonts koji ce biti iskoristen za title stranice - BK OSIJEK */ 
+  src: url(fonts/octin-sports-free.regular.ttf);
+  font-family: bkosijek;
+}
+
+
+
+.TextBlock {
+  padding-top:10px; /* S obzirom da je TextBlock povucen dolje s paddingom je to rjeseno*/
+  width: 64.5%;
+  position: relative; /* sa topom odreduje da citav "artikl" bude duz citave stranice tj. pravi height 100%, da je position fixed ne bi bilo tako */ 
+  height: 505vh;
+  left: 300px;
+  background-color: white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px; 
+  border-left-style: solid;  /*Ajmo reći klasa koja pretvara dio stranice u "article" (a ovo sam krenuo raditi prije laboratorijskih vježbi), stoga daje okvir i pozicionira teks segment */
+  border-right-style: solid;
+  border-color: #e5e5e5; /* sivi border */ 
+  border-width: 2,5px; 
+}
+
+
+.kutija {
+  float: right;
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+  background-color: aqua;
+ }
+ 
+.size1 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.Z1LogoAndTitle {
+  position: relative;
+  right: 0px;
+  top: 0px;
+  z-index: 0;
+  font-family: bkosijek;
+  font-weight: 500;
+}
+
+.PageHeading {
+  text-indent: 20px;
+  font-size: 55px;
+  position: absolute;
+  letter-spacing: -2.5px;
+  top: 20px;
+  left: 50px;
+}
+
+.TextHeading1{
+  text-indent: 20px;
+  font-size: 35px;
+  position: absolute;
+  letter-spacing: -2.5px;
+  left: 50px;
+  top: 100px;
+}
+
+.TextHeading{  /* Klasa za heading ispod Naslovnog headera, radi u kombinaciji sa img-with-text, oblikuje tekst i pozicionira*/
+  text-indent: 20px;
+  font-size: 35px;
+  position: relative;
+  letter-spacing: -2.5px;
+}
+
+
+.PagePicture { /*Klasa koja definira velicinu slika na naslovnoj stranici */ 
+  margin: auto;  
+  width: 975px;
+  height: 725px;
+}
+
+/*Ovo sam našao na stackoverflowu, za postavljanje teksta ispod slike automatski, kao klasa */ 
+.img-with-text {
+  text-align: justify;
+  width: 975px;
+  margin-left: 107px;
+  margin-top: 170px;
+}
+
+
+
+.paddingL {
+  padding-left: 580px;
+}
+
+.WidthNavBar {
+  width: 140px;
+}
+
+.spacingNigrutin {
+  position: absolute;
+  margin-top: -20px;
+  left: 440px;
+  z-index: 1;
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.FixFooter{ /* Klasa za definiranje fiksnog footera na podnozju stranice */ 
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(41, 41, 41); /* Boja pozadine footera */ 
+   color: white;  /*Definiranje boje fonta*/
+   text-align: center;
+}
+
+/*-------------------------------------------------------------------O NAMA ----------------------------------------------*/
+
+
+.TextAboutUs{
+  font-size: 19px;
+  padding-bottom: 35px;
+  padding-top: 10px;
+  position:relative;
+  top:90px
+}
+
+.TextBlock2 {
+  padding-top:10px; /* S obzirom da je TextBlock povucen dolje s paddingom je to rjeseno*/
+  width: 64.5%;
+  position: relative; /* sa topom odreduje da citav "artikl" bude duz citave stranice tj. pravi height 100%, da je position fixed ne bi bilo tako */ 
+  height: 195vh;  /* Height viewporta ovisan o posotku viewporta, u ovom slucaju preko 100 zbog texta */
+  left: 300px;
+  background-color: white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px; 
+  border-left-style: solid;  /*Ajmo reći klasa koja pretvara dio stranice u "article" (a ovo sam krenuo raditi prije laboratorijskih vježbi), stoga daje okvir i pozicionira teks segment */
+  border-right-style: solid;
+  border-color: #e5e5e5; /* sivi border */ 
+  border-width: 2,5px; 
+}
+
+
+/*--------------------------------------------------------------------
+
+
+/*---------------------------------------------------------------STRUČNI TIM----------------------------------------------------*/
+
+.PictureStrucni{
+  margin: auto;  
+  width: 500px;
+  height: 400x;
+  border: 2px solid rgb(63, 63, 63);
+
+}
+
+.TeamDivPosition{
+  position: absolute;
+  left: 245px;
+}
+
+.TextBlock3 {
+  padding-top:10px; /* S obzirom da je TextBlock povucen dolje s paddingom je to rjeseno*/
+  width: 64.5%;
+  position: relative; /* sa topom odreduje da citav "artikl" bude duz citave stranice tj. pravi height 100%, da je position fixed ne bi bilo tako */ 
+  height: 290vh;  /* Height viewporta ovisan o posotku viewporta, u ovom slucaju preko 100 zbog texta */
+  left: 300px;
+  background-color: white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px; 
+  border-left-style: solid;  /*Ajmo reći klasa koja pretvara dio stranice u "article" (a ovo sam krenuo raditi prije laboratorijskih vježbi), stoga daje okvir i pozicionira teks segment */
+  border-right-style: solid;
+  border-color: #e5e5e5; /* sivi border */ 
+  border-width: 2,5px; 
+}
+
+.MikolcevicTextPosition{ /* Za sad ne iskoristena klasa */ 
+  font-size: 20px;
+  position: absolute;
+  margin-top: -800px;
+  margin-left: 600px;
+}
+
+/*--------------------------------------------------------------------
+
+/*---------------------------------------------------------------NATJECATELJI----------------------------------------------------*/
+
+.TextBlock4 {
+  padding-top:10px; /* S obzirom da je TextBlock povucen dolje s paddingom je to rjeseno*/
+  width: 64.5%;
+  position: relative; /* sa topom odreduje da citav "artikl" bude duz citave stranice tj. pravi height 100%, da je position fixed ne bi bilo tako */ 
+  height: 85vh;  /* Height viewporta ovisan o posotku viewporta, u ovom slucaju preko 100 zbog texta */
+  left: 300px;
+  background-color: white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px; 
+  border-left-style: solid;  /*Ajmo reći klasa koja pretvara dio stranice u "article" (a ovo sam krenuo raditi prije laboratorijskih vježbi), stoga daje okvir i pozicionira teks segment */
+  border-right-style: solid;
+  border-color: #e5e5e5; /* sivi border */ 
+  border-width: 2,5px; 
+}
+
+ol{ /* Modificiranje ordered liste */
+  font-size: 20px;
+}
+
+.ContendersPicture{  /*Dimenzije slike i pozicioniranje */ 
+  position: absolute;
+  margin-top: -370px;
+  margin-left: 380px;
+  width: 770px;
+  height: 480px;
+  border: 2px solid;
+}
+
+.ContendersText{ /*Pozicioniranje teksta */ 
+  margin-top: 140px;
+  margin-left: 50px;
+}
+
+/*--------------------------------------------------------------------
+
+/*---------------------------------------------------------------TRENINZI----------------------------------------------------*/
+
+
+table{
+  margin-top: 200px;
+  font-size: 18px;
+}
+
+th{
+  background-color: #d4d3d3; 
+  text-align: center;
+}
+
+td{
+  padding-top: 40px;
+  background-color: #ebebeb; 
+  text-align: center;
+}
+
+/*--------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------GALERIJA----------------------------------------------------*/
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+ .kontejner {                      /* UPOTRIJEBljen ZA RASPORED THUMBNAILOVA U GALERIJI */
+  margin-left: 65px;
+  margin-top: 100px;  
+  display: grid;
+    grid-template-areas:
+    "article1 article1 article1 article1"
+    "article1 article1 article1 article1"
+    "article1 article1 article1 article1";
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+   }  
+
+   .TextBlock5 {
+    padding-top:10px; /* S obzirom da je TextBlock povucen dolje s paddingom je to rjeseno*/
+    width: 64.5%;
+    position: relative; /* sa topom odreduje da citav "artikl" bude duz citave stranice tj. pravi height 100%, da je position fixed ne bi bilo tako */ 
+    height: 90vh;  /* Height viewporta ovisan o posotku viewporta, u ovom slucaju preko 100 zbog texta */
+    left: 300px;
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px; 
+    border-left-style: solid;  /*Ajmo reći klasa koja pretvara dio stranice u "article" (a ovo sam krenuo raditi prije laboratorijskih vježbi), stoga daje okvir i pozicionira teks segment */
+    border-right-style: solid;
+    border-color: #e5e5e5; /* sivi border */ 
+    border-width: 2,5px; 
+  }
+
+/*--------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------KONTAKTI----------------------------------------------------*/
+
+.ContactTextPosition{
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 19px;
+
+}
+
+.ContactTextWholePosition{
+  margin-top: 100px;
+}
+
+.TextBlock6 {
+  padding-top:10px; /* S obzirom da je TextBlock povucen dolje s paddingom je to rjeseno*/
+  width: 64.5%;
+  position: relative; /* sa topom odreduje da citav "artikl" bude duz citave stranice tj. pravi height 100%, da je position fixed ne bi bilo tako */ 
+  height: 90vh;  /* Height viewporta ovisan o posotku viewporta, u ovom slucaju preko 100 zbog texta */
+  left: 300px;
+  background-color: white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px; 
+  border-left-style: solid;  /*Ajmo reći klasa koja pretvara dio stranice u "article" (a ovo sam krenuo raditi prije laboratorijskih vježbi), stoga daje okvir i pozicionira teks segment */
+  border-right-style: solid;
+  border-color: #e5e5e5; /* sivi border */ 
+  border-width: 2,5px; 
+}
+
+.ContactImage1{
+  position: absolute;
+  left: 600px;
+  top: 450px;
+  border: 2px solid;
+}
+
+.ContactImage2{
+  position: absolute;
+  left: 600px;
+  top: 100px;
+  border: 2px solid;
+}
+
+
+/*--------------------------------------------------------------------*/
+.siteLine {
+  /*text-decoration: underline;*/
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
